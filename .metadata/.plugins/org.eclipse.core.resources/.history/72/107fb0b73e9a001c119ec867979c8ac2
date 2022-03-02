@@ -1,0 +1,18 @@
+package com.example.demo.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+
+public class PollController {
+	
+	@Autowired
+	private PollRepository pollRepository;
+
+	
+	@GetMapping("/welcome")
+	public String welcome() {
+		return "Hello Spring Rest";
+		
+	}
+
+}
